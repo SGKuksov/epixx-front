@@ -1,0 +1,37 @@
+.filter {
+  @include container();
+  position: absolute;
+  top: -40px;
+  z-index: 1;
+  display: flex;
+  height: 80px;
+  padding-left: column(1, 16);
+  padding-right: column(1, 16);
+
+  &__block {
+    background: $white;
+    border-radius: 16px;
+    margin-right: 20px;
+    flex: 1;
+  }
+
+  &__btn {
+    @include column(4, 14);
+    border-radius: 16px;
+    background: $main-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    color: $white;
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+}

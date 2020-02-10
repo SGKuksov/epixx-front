@@ -1,0 +1,32 @@
+// Нормализация
+@import "./normalize";  
+
+// Переменные
+@import "./variables";
+
+// Функции
+@import "./functions";
+
+// Миксины
+@import "./mixins/mixins";
+@import "./mixins/font-face-generator";
+
+// Breakpoints
+@import './breakpoints';
+
+// Шрифты
+@import "./fonts";
+
+// Grid
+@import './grid';
+
+// Default tags
+@import "./global-tags";
+
+// Blocks
+@import "./blocks/page-header";
+@import "./blocks/page-main";
+@import "./blocks/page-footer";
+@import "./blocks/hero";
+@import "./blocks/card";
+@import "./blocks/filter";

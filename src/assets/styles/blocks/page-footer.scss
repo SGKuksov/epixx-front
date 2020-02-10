@@ -1,0 +1,32 @@
+.page-footer {
+  background-color: #E5E5E5;
+  padding-bottom: 45px;
+  padding-top: 30px;
+
+  &__inner {
+    @include container();
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: column(1, 16);
+    padding-right: column(1, 16);
+  }
+
+  &__logo {
+    padding-left: column(1, 14);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #152930;
+  }
+
+  &__right {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #152930;
+  }
+}

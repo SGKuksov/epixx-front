@@ -1,0 +1,106 @@
+// GRID
+// Максимальная ширина контейнера
+// Рекомендуемые зачения и единицы: auto | px | % | vw
+// Если единицы не указаны будут px
+$grid-container: (
+  'mobile':               100%,
+  'tablet':               100%,
+  'tablet-landscape':     100%,
+  'desktop':              100%,
+  'desktop-wide':         1280,
+  'fullhd':               1600,
+  'ultra':                1600
+);
+
+// Колчество колонок
+$grid-columns:            16;
+
+// Отступы между колонками и внутри колонок
+// Отступы Будут пересчитаны в процены, а указанные значения будут минимальными
+// $mobile | $tablet | $tablet-landscape | $desktop | $desktop-wide | $fullhd | $ultra
+$grid-indents: (
+  'mobile':               0,
+  'tablet':               0,
+  'tablet-landscape':     0,
+  'desktop':              0,
+  'desktop-wide':         0,
+  'fullhd':               0,
+  'ultra':                0
+);
+
+// Ритм
+$rhythm:                  4px;
+
+// breakpoints
+$breakpoints:  (
+  'mobile':               0,
+  'tablet':               768,
+  'tablet-landscape':     1024,
+  'desktop':              1280,
+  'desktop-wide':         1440,
+  'fullhd':               1920,
+  'ultra':                2560
+);
+
+/* COLORS */
+$trs:                     transparent;
+
+// Градации серого
+$gray:            				#808080;
+$gray-lightest:					  #f8f8f8;
+$gray-lighten:    				#f5f5f5;
+$gray-light:      				#b3b3b3;
+$gray-samidark:   				#CCCCCC;
+$gray-dark:       				#585858;
+$gray-darken:     				#333333;
+$gray-darkest:					  #222222;
+
+$black:							      #0C171B;
+$black-light:             #152930;
+$white:						        #ffffff;
+
+// Брендовые цвета
+$main-color:              #2F80ED;
+$main-color-light:				#C12538;
+
+$second-color:            #fc7279;
+//$second-color-light:			lighten($color-second, 10%);
+//$second-color-dark:				darken($color-second, 10%);
+
+// Фон
+$background-color:        $white;
+
+// Стандартный цвет текста
+$text-color:              #101C20;
+
+// Стандартный цвет ссылок
+$link-color:            	$white;
+$link-hover-color:      	$main-color-light;
+$link-active-color:       $main-color;
+$link-focus-color:      	$main-color-light;
+
+// FONTS
+$font-basic:              10px;
+$font-size:						    1.4rem;
+$font-name:					      'Montserrat';
+$font-family:					    'Montserrat', 'Tahoma', sans-serif;
+$font-bold:						    700;
+$font-semibold:					  600;
+$font-regular:					  400;
+$font-light:					    300;
+
+$line-height:					    1.5em;
+
+$font-sizes: (
+  // $mobile | $tablet | $tablet-landscape | $desktop | $desktop-wide | $fullhd | $ultra
+  h1:     (30, 30, 40, 54, 54, 72, 95),
+  h2:     (26, 26, 32, 44, 44, 44, 44),
+  h3:     (20, 20, 22, 24, 24, 32, 42),
+  h4:     (18, 18, 20, 22, 22, 26, 32),
+  h5:     (16, 16, 18, 20, 20, 24, 32),
+  h6:     (14, 16, 16, 18, 20, 22, 30),
+  p:      (16, 16, 16, 18, 18, 20, 30),
+  p2:     (14, 14, 16, 16, 16, 18, 20),
+  small:  (12, 12, 14, 14, 14, 16, 18),
+  form:   (16, 16, 16, 18, 18, 20, 30)
+);

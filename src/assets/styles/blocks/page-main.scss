@@ -1,0 +1,183 @@
+.page-main {
+  background-color: #E5E5E5;
+
+  &__inner {
+    position: relative;
+    @include container();
+    overflow: visible;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  &__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: column(1, 16);
+    padding-right: column(1, 16);
+  }
+
+  &__card {
+    @include column(4, 14);
+    margin-bottom: 60px;
+    margin-right: column(1, 14);
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  &__end {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__end-btn {
+    background: #BDBDBD;
+    height: 60px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #152930;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 16px;
+  }
+
+  &__content {
+    display: flex;
+    padding-left: column(1, 16);
+    padding-right: column(1, 16);
+
+    blockquote {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: black;
+      position: relative;
+      padding-bottom: 40px;
+      margin-bottom: 35px;
+      display: flex;
+      justify-content: center;
+
+      &:after {
+        content: '';
+        background: #2F80ED;
+        border-radius: 16px;
+        position: absolute;
+        width: 90px;
+        height: 10px;
+        bottom: 0;
+      }
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $black;
+      margin-bottom: 40px;
+    }
+
+    .poster {
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      border-radius: 16px;
+      margin-bottom: 70px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__content-footer {
+    display: flex;
+  }
+
+  &__content-select {
+    @include column(3, 9);
+    background: $white;
+    border-radius: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: rgba(#262D36, 0.6);
+
+    span {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      color: #393937;
+      display: block;
+    }
+  }
+
+  &__content-price {
+    @include column(3, 9);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    line-height: 24px;
+
+    span {
+      margin-left: 20px;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 24px;
+      color: $main-color;
+    }
+  }
+
+  &__content-btn {
+    @include column(3, 9);
+    background: $main-color;
+    border-radius: 16px;
+    color: $white;
+    height: 80px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+
+  &__content-inner {
+    @include column(9, 14);
+    margin-right: column(1, 14);
+  }
+
+  &__side {
+    @include column(4, 14);
+
+    .card {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__side-title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: $black;
+  }
+
+}
